@@ -26,7 +26,7 @@ class _NoteModifyState extends State<NoteModify> {
         title: Text(
           isEditing ? 'Edit Notes' : 'Create Notes',
         ),
-        backgroundColor: Colors.deepPurpleAccent,
+        backgroundColor: Colors.lightGreen,
       ),
       body: Padding(
         padding: const EdgeInsets.all(12.0),
@@ -91,7 +91,7 @@ class _NoteModifyState extends State<NoteModify> {
 //                    Navigator.pop(context);
                   },
                   child: Text(
-                    'Submit',
+                    'Save',
                     style: TextStyle(color: Colors.white, fontSize: 30),
                   ),
                   color: Colors.teal,

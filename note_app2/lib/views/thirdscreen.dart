@@ -15,15 +15,15 @@ class ThirdScreen extends StatelessWidget {
         title: Text(
           'Details',
         ),
-        backgroundColor: Colors.deepPurpleAccent,
+        backgroundColor: Colors.lightGreen,
         centerTitle: true,
       ),
       body: Container(
         decoration: BoxDecoration(
             gradient: LinearGradient(
-                colors: [Colors.blue, Colors.deepPurpleAccent])),
+                colors: [Colors.lightGreen, Colors.yellow[300]])),
         child: Padding(
-          padding: const EdgeInsets.all(40.0),
+          padding: const EdgeInsets.all(25.0),
           child: Container(
             decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Colors.white),
             child: Column(

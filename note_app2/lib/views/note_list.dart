@@ -22,7 +22,7 @@ class _NoteListState extends State<NoteList> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.deepPurpleAccent,
+        backgroundColor: Colors.lightGreen,
         actions: [
           IconButton(
             icon: !isSearching ? Icon(Icons.search) : Icon(Icons.cancel),
@@ -42,6 +42,7 @@ class _NoteListState extends State<NoteList> {
                     hintText: 'Search note here',
                     hintStyle: TextStyle(color: Colors.white)),
               ),
+        centerTitle: true,
       ),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.white,
@@ -57,7 +58,7 @@ class _NoteListState extends State<NoteList> {
       body: Container(
         decoration: BoxDecoration(
           gradient:
-              LinearGradient(colors: [Colors.blue, Colors.deepPurpleAccent]),
+              LinearGradient(colors: [Colors.lightGreen, Colors.yellow[300]]),
         ),
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 13.0, vertical: 28),
@@ -95,8 +96,8 @@ class _NoteListState extends State<NoteList> {
       },
       background: Container(
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(20),
-          gradient: LinearGradient(colors: [Colors.blue, Colors.purple]),
+          borderRadius: BorderRadius.circular(15),
+          gradient:   LinearGradient(colors: [Colors.lightGreen, Colors.yellow[300]]),
         ),
         child: Align(
           child: Icon(
@@ -108,7 +109,7 @@ class _NoteListState extends State<NoteList> {
       ),
       child: Container(
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(20),
+          borderRadius: BorderRadius.circular(15),
           color: Colors.white,
         ),
         child: ListTile(
