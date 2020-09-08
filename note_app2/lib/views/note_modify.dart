@@ -64,14 +64,14 @@ class _NoteModifyState extends State<NoteModify> {
                 padding: const EdgeInsets.all(8.0),
                 child: RaisedButton(
                   onPressed: () {
-                    Navigator.push(
+                    Navigator.pushAndRemoveUntil(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => NoteList(data: title)));
-                    Navigator.push(
+                            builder: (context) => NoteList(data: title),), ModalRoute.withName('/note_list'));
+                    Navigator.pushAndRemoveUntil(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => NoteList(data: description)));
+                            builder: (context) => NoteList(data: description),), ModalRoute.withName('/note_list'));
                     NoteForListing n1 = NoteForListing(
                       noteTitle: title,
                       noteDescription: description,
