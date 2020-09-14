@@ -191,7 +191,7 @@ class _Product_DetailsState extends State<Product_Details> {
                   child: Row(
                     children: [
                       Expanded(
-                        child: Text('Quantity'),
+                        child: Text('Quantity',style: TextStyle(fontSize: 11),),
                       ),
                       Expanded(
                         child: Icon(Icons.arrow_drop_down),
