@@ -1,2 +1,6 @@
-This is a simple note app which was built with flutter. It has functionality to add and remove notes.Notes can be displayed in different screen while clicked.
+I have created three basic applications  which is compatible both for android and i-OS. 
+There is:
+A calculator app,
+A Simple note taking app,
+A Simple Shopping app.
  
