@@ -22,6 +22,14 @@ class _CartProductsState extends State<CartProducts> {
       "size": "M",
       "color": "brown",
       "quantity": 1,
+    },
+    {
+      "name": "T-Shirt",
+      "picture": "images/products/tshirt.png",
+      "price": "600/-",
+      "size": "M",
+      "color": "white",
+      "quantity": 1,
     }
   ];
   @override

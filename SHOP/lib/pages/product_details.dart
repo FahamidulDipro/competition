@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shopping_app/pages/cart.dart';
 import 'package:shopping_app/Model/products.dart';
 
 
@@ -211,7 +212,9 @@ class _Product_DetailsState extends State<Product_Details> {
                 padding: const EdgeInsets.all(8.0),
                 child: Expanded(
                   child: MaterialButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=>Cart()));
+                    },
                     color: Colors.green,
                     textColor: Colors.white,
                     child: Text(
@@ -226,7 +229,13 @@ class _Product_DetailsState extends State<Product_Details> {
                 padding: const EdgeInsets.all(8.0),
                 child: Expanded(
                   child: MaterialButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      showDialog(context: context,
+                        builder: (context)=>AlertDialog(
+                          title: Text('Product added to cart'),
+                        )
+                      );
+                    },
                     color: Colors.orange,
                     textColor: Colors.white,
                     child: Row(

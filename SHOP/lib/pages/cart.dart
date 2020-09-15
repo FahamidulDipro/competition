@@ -33,7 +33,18 @@ class _CartState extends State<Cart> {
               child: Padding(
                 padding: const EdgeInsets.only(right:18.0),
                 child: MaterialButton(
-                  onPressed: (){},
+                  onPressed: (){
+                      showDialog(
+                        context: context,
+                        builder: (context) => AlertDialog(
+                          title: Icon(Icons.check_circle_outline,color: Colors.green,size: 50,),
+                          content: Text("You have successfully purchased your product."),
+                        )
+                      );
+
+
+
+                  },
                   child: Text('Check Out',style: TextStyle(color: Colors.white,fontSize: 20,fontWeight: FontWeight.bold),),
                   color: Colors.green,
                 ),

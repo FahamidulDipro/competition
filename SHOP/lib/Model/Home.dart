@@ -24,7 +24,7 @@ class _HomeState extends State<Home> {
         AssetImage('images/watch.jpg'),
         AssetImage('images/shoes.jpg'),
       ],
-      autoplay: false,
+      autoplay: true,
       animationCurve: Curves.fastOutSlowIn,
       animationDuration: Duration(microseconds: 1000),
       dotSize: 4,
@@ -36,7 +36,7 @@ class _HomeState extends State<Home> {
     return Scaffold(
       appBar: AppBar(
         elevation: 0.1,
-        title: !isSearching? Text('SHOPAPP'):TextField(decoration: InputDecoration(hintText: "Search Products",hintStyle: TextStyle(color: Colors.white)),style: TextStyle(color: Colors.white),),
+        title: !isSearching? Text('BIG MART'):TextField(decoration: InputDecoration(hintText: "Search Products",hintStyle: TextStyle(color: Colors.white)),style: TextStyle(color: Colors.white),),
         backgroundColor: Colors.orange,
         actions: [
           IconButton(
@@ -66,8 +66,8 @@ class _HomeState extends State<Home> {
         child: ListView(
           children: [
             UserAccountsDrawerHeader(
-              accountName: Text('Fahamidul Dipro'),
-              accountEmail: Text('fid@fidmail.com'),
+              accountName: Text('User'),
+              accountEmail: Text('user@usermail.com'),
               currentAccountPicture: GestureDetector(
                 child: CircleAvatar(
                   backgroundColor: Colors.blueGrey,
